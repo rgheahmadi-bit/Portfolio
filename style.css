@@ -1,0 +1,278 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fde2e4, #e3f2fd);
+  color: #333;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 2px solid #90caf9;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.branding h1 {
+  margin: 0;
+  color: #0a407e;
+  text-shadow: 2px 2px 3px #bbdefb;
+}
+
+.branding h2 {
+  white-space: pre-line;
+}
+
+.navbar.left-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.navbar.left-nav a {
+  display: block;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  color: #1565c0;
+  background-color: rgba(187, 222, 251, 0.5);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.navbar.left-nav a:hover {
+  background-color: #1565c0;
+  color: #ffffff;
+  border-color: #0d47a1;
+}
+
+.navbar.left-nav a.active {
+  background-color: #1565c0;
+  color: #ffffff;
+}
+
+main {
+  padding: 20px 30px 40px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  flex: 1 1 260px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 2rem;
+  color: #7221a8;
+  margin: 0 0 6px;
+}
+
+.hero-title {
+  margin: 0 0 10px;
+  color: #1565c0;
+}
+
+.hero-body {
+  line-height: 1.6;
+}
+
+.hero-photo {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #af10cf;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(219, 30, 30, 0.2);
+}
+
+footer {
+  text-align: center;
+  padding: 16px 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-top: 2px solid #90caf9;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar.left-nav ul {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  main {
+    padding: 16px 18px 30px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .photo {
+    width: 150px;
+  }
+}
+
+
+.kesler-wrapper {
+  max-width: 960px;
+  margin: 40px auto 60px;
+  padding: 20px;
+  text-align: center;
+  background-color: #badbe4;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(139, 83, 146, 0.08);
+}
+
+.kesler-wrapper h1 {
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 28px;
+  margin: 0 0 24px;
+  color: #0a407e;
+}
+
+
+.kesler-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px; 
+}
+
+
+.kesler-gallery a img {
+  width: 100%;
+  height: 260px;       
+  object-fit: cover;   
+  display: block;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.kesler-gallery a:hover img {
+  opacity: 0.8;
+  transform: scale(1.02);
+}
+
+
+@media (max-width: 768px) {
+  .kesler-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .kesler-gallery a img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kesler-gallery {
+    grid-template-columns: 1fr;
+  }
+  .kesler-gallery a img {
+    height: 200px;
+  }
+}
+
+
+.page-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 42px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #0a407e;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.description {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+
+.card {
+    background: #badbe4;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin: 25px 0;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+    margin-top: 0;
+    color: #0a407e;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card hr {
+    border: none;
+    border-top: 1px solid #cfe0f6;
+    margin: 15px 0;
+}
+
+.link {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+.edu-list {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.edu-list li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
